@@ -1,6 +1,7 @@
 package MicroTeam.RentaCar.Automovil.controller;
 
 import MicroTeam.RentaCar.Automovil.entity.AutomovilEntity;
+import MicroTeam.RentaCar.Automovil.repository.AutomovilRepository;
 import MicroTeam.RentaCar.Automovil.service.AutomovilService;
 
 import lombok.extern.slf4j.Slf4j;
@@ -26,6 +27,7 @@ public class AutomovilController {
 
     @Autowired
     AutomovilService serv;
+    AutomovilRepository rep;
 
     @GetMapping("/getAll")
     public ResponseEntity<?> getAll(){
@@ -36,6 +38,36 @@ public class AutomovilController {
         } catch (Exception ex) {
             System.out.println(ex);
             response = new ResponseEntity<>("{\"Error\":\"Algo salio mal :c\"}"+ ex, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+        return response;
+
+    }
+
+    @PostMapping("/addAuto")
+    public ResponseEntity<?> addAutomovil (@RequestBody AutomovilEntity auto){
+        ResponseEntity<?> response;
+        String respuestaService = this.serv.saveAutomovilEntity(auto);
+        try{
+            if(respuestaService.equals("ok")) {
+                response = new ResponseEntity<>("{\"Mensaje\":\"Automovil creado creado correctamente\"}", HttpStatus.CREATED);
+            } else {
+                response = new ResponseEntity<>("{\"Error\":\"El automovil es anterior al año 2000\"}",HttpStatus.BAD_REQUEST);
+            }
+        } catch (Exception ex) {
+            response = new ResponseEntity<>("{\"Error\":\"Hubo un problema\"}",HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+        return response;
+    }
+
+    @GetMapping("/getByPatente/{patente}")
+    public ResponseEntity<?> getClienteById(@PathVariable String patente){
+        ResponseEntity<?> response;
+        try{
+            AutomovilEntity auto = this.serv.findAutomovilEntityByPatente(patente);
+            response = new ResponseEntity<>(patente, HttpStatus.OK);
+        }catch (Exception ex) {
+            System.out.println(ex);
+            response = new ResponseEntity<>("{\"Error\":\"Algo salio mal\"}"+ ex, HttpStatus.INTERNAL_SERVER_ERROR);
         }
         return response;
 

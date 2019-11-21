@@ -12,11 +12,12 @@ import java.util.Optional;
 @Service
 public interface AutomovilService {
 
-    void createAutomovilEntity(List<AutomovilEntity> auto);
+
+    String saveAutomovilEntity (AutomovilEntity auto);
 
     List<AutomovilEntity> getAllAutomovilEntitys();
 
-    Optional<AutomovilEntity> findAutomovilEntityById(int id);
+    AutomovilEntity findAutomovilEntityByPatente(String patente);
 
     void deleteAutomovilEntityById(int id);
 

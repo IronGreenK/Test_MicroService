@@ -8,5 +8,5 @@ import java.io.Serializable;
 
 @Repository
 public interface AutomovilRepository extends MongoRepository<AutomovilEntity, Serializable> {
-
+    AutomovilEntity findOneByPatente(String patente);
 }
