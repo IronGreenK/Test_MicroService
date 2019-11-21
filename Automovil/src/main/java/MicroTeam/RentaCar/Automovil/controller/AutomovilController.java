@@ -60,11 +60,11 @@ public class AutomovilController {
     }
 
     @GetMapping("/getByPatente/{patente}")
-    public ResponseEntity<?> getClienteById(@PathVariable String patente){
+    public ResponseEntity<?> getAutomovilByPatente(@PathVariable(value= "patente") String patente){
         ResponseEntity<?> response;
         try{
-            AutomovilEntity auto = this.serv.findAutomovilEntityByPatente(patente);
-            response = new ResponseEntity<>(patente, HttpStatus.OK);
+            AutomovilEntity auto = serv.findAutomovilEntityByPatente(patente);
+            response = new ResponseEntity<>(auto, HttpStatus.OK);
         }catch (Exception ex) {
             System.out.println(ex);
             response = new ResponseEntity<>("{\"Error\":\"Algo salio mal\"}"+ ex, HttpStatus.INTERNAL_SERVER_ERROR);
@@ -73,5 +73,10 @@ public class AutomovilController {
 
     }
 
+
+    @GetMapping(value= "/getbyid/{auto-id}")
+    public Optional<AutomovilEntity> getById(@PathVariable(value= "auto-id") String id) {
+        return serv.findAutomovilEntityById(id);
+    }
 
 }

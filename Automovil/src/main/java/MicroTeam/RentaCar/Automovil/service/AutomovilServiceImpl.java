@@ -36,7 +36,11 @@ public class AutomovilServiceImpl implements AutomovilService {
 
     @Override
     public AutomovilEntity findAutomovilEntityByPatente(String patente) {
-        return  this.repository.findById(patente).get();
+        return  this.repository.findOneByPatente(patente);
+    }
+    @Override
+    public Optional<AutomovilEntity> findAutomovilEntityById(String id) {
+        return  this.repository.findById(id);
     }
 
     @Override

@@ -19,6 +19,8 @@ public interface AutomovilService {
 
     AutomovilEntity findAutomovilEntityByPatente(String patente);
 
+    Optional<AutomovilEntity> findAutomovilEntityById(String id);
+
     void deleteAutomovilEntityById(int id);
 
     void updateAutomovilEntity(AutomovilEntity auto);
