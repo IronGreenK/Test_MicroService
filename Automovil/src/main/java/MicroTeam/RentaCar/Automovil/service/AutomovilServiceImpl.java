@@ -35,17 +35,13 @@ public class AutomovilServiceImpl implements AutomovilService {
     }
 
     @Override
-    public AutomovilEntity findAutomovilEntityByPatente(String patente) {
+    public Optional<AutomovilEntity> findAutomovilEntityByPatente(String patente) {
         return  this.repository.findOneByPatente(patente);
-    }
-    @Override
-    public Optional<AutomovilEntity> findAutomovilEntityById(String id) {
-        return  this.repository.findById(id);
     }
 
     @Override
-    public void deleteAutomovilEntityById(int id) {
-        this.repository.deleteById(id);
+    public void deleteAutomovilEntityByPatente(String patente) {
+        this.repository.deleteById(patente);
     }
     @Override
     public void updateAutomovilEntity(AutomovilEntity auto) {

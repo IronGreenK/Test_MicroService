@@ -14,10 +14,11 @@ public class AutomovilEntity implements Serializable {
     private static final long serialVersionUID = -1L;
     @Id
     @NotNull
-    private String id;
+    private String patente;
+
+
     private String marca;
     private String modelo;
-    private String patente;
     private int annoFabricacion;
     private int revisionTecnica;
     private String estado;

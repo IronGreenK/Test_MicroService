@@ -17,11 +17,10 @@ public interface AutomovilService {
 
     List<AutomovilEntity> getAllAutomovilEntitys();
 
-    AutomovilEntity findAutomovilEntityByPatente(String patente);
 
-    Optional<AutomovilEntity> findAutomovilEntityById(String id);
+    Optional<AutomovilEntity> findAutomovilEntityByPatente(String id);
 
-    void deleteAutomovilEntityById(int id);
+    void deleteAutomovilEntityByPatente(String id);
 
     void updateAutomovilEntity(AutomovilEntity auto);
 
