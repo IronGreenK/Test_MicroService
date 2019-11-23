@@ -6,7 +6,6 @@ import MicroTeam.RentaCar.Automovil.repository.AutomovilRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
@@ -15,31 +14,40 @@ public class AutomovilServiceImpl implements AutomovilService {
 
 
     @Autowired
-    AutomovilRepository dao;
+    AutomovilRepository repository;
     public AutomovilServiceImpl() {
     }
+
     @Override
-    public void createAutomovilEntity(List<AutomovilEntity> auto) {
-        this.dao.saveAll(auto);
+    public String saveAutomovilEntity(AutomovilEntity auto) {
+        if (auto.getAnnoFabricacion()>=2000){
+            this.repository.save(auto);
+            return "ok";
+        } else {
+            return "El anno es menor";
+        }
     }
+
     @Override
     public List<AutomovilEntity> getAllAutomovilEntitys() {
-        return this.dao.findAll();
+        return this.repository.findAll();
     }
+
     @Override
-    public Optional<AutomovilEntity> findAutomovilEntityById(int id) {
-        return this.dao.findById(id);
+    public Optional<AutomovilEntity> findAutomovilEntityByPatente(String patente) {
+        return  this.repository.findOneByPatente(patente);
     }
+
     @Override
-    public void deleteAutomovilEntityById(int id) {
-        this.dao.deleteById(id);
+    public void deleteAutomovilEntityByPatente(String patente) {
+        this.repository.deleteById(patente);
     }
     @Override
     public void updateAutomovilEntity(AutomovilEntity auto) {
-        this.dao.save(auto);
+        this.repository.save(auto);
     }
     @Override
     public void deleteAllAutomovilEntitys() {
-        this.dao.deleteAll();
+        this.repository.deleteAll();
     }
 }
