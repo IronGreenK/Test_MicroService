@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ae97c68-45d4-47e7-b77b-1b212da4e77f" name="Default Changelist" comment=" se ingresaron Correcciones al update" />
+    <list default="true" id="2ae97c68-45d4-47e7-b77b-1b212da4e77f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,9 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ms-cliente-neg" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -111,9 +114,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value=" se ingresaron Correcciones al update" />
-    <option name="LAST_COMMIT_MESSAGE" value=" se ingresaron Correcciones al update" />
   </component>
 </project>

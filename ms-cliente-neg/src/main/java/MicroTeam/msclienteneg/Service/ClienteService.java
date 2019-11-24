@@ -12,5 +12,5 @@ public interface ClienteService {
     List<ClienteEntity> buscarTodos();
     void updateClienteEntity(ClienteEntity cliente);
     void deleteClientePorRut(String rut);
-    void deleteClienteEntity(ClienteEntity cliente);
+    void deleteAllClientesEntitys();
 }

@@ -4,9 +4,5 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ms-cliente-neg.main" target="1.8" />
-      <module name="ms-cliente-neg.test" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

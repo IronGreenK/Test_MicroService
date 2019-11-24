@@ -20,35 +20,36 @@ public class ClienteController {
     private ClienteServiceImpl clienteService;
 
     @GetMapping( value = "/getByRut/{cliente}")
-        public Optional<ClienteEntity> getByRut(@PathVariable(value = "cliente")String rut){
+    public Optional<ClienteEntity> getByRut(@PathVariable(value = "cliente")String rut){
         return clienteService.buscarClientePorRut(rut);
     }
-
      @GetMapping("/getAll")
-    public ResponseEntity<?>getAll(){
-        ResponseEntity<?>response;
-        try{
-            List<ClienteEntity> cliente = this.clienteService.buscarTodos();
-            response = new ResponseEntity<>(cliente, HttpStatus.OK);
-        }catch (Exception ex){
-            System.out.println(ex);
-            response = new ResponseEntity<>(ex.getMessage(),HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-        return response;
-    }
+     public ResponseEntity<?>getAll(){
+         ResponseEntity<?>response;
+         try{
+             List<ClienteEntity> cliente = this.clienteService.buscarTodos();
+             response = new ResponseEntity<>(cliente, HttpStatus.OK);
+         }catch (Exception ex){
+             System.out.println(ex);
+             response = new ResponseEntity<>(ex.getMessage(),HttpStatus.INTERNAL_SERVER_ERROR);
+         }
+         return response;
+     }
 
     @PostMapping("/addCliente")
     public ResponseEntity<?>addCliente(@RequestBody ClienteEntity cliente){
         ResponseEntity<?> response;
         String respuService = this.clienteService.createClienteEntity(cliente);
         try{
-           if (respuService.equals("ok")){
-               response = new ResponseEntity<>("{\"Mensaje\":\"Cliente creado exitosamente\"}", HttpStatus.CREATED);
-           }else{
-               response = new ResponseEntity<>("{\"Error\":\"El Cliente no puede tener menos de 25 años\"}",HttpStatus.BAD_REQUEST);
-           }
+            if (respuService.equals("Cliente inngresado")){
+                response = new ResponseEntity<>("{\"Mensaje\":\"Cliente creado exitosamente\"}", HttpStatus.CREATED);
+            }else if(respuService.equals("existe cliente")){
+                response = new ResponseEntity<>("{\"Error\":\"Ya existe el cliente\"}",HttpStatus.BAD_REQUEST);
+            }else{
+                response = new ResponseEntity<>("{\"Error\":\"El Cliente no puede tener menos de 25 años\"}",HttpStatus.BAD_REQUEST);
+            }
 
-            } catch (Exception ex){
+        } catch (Exception ex){
             response = new ResponseEntity<>("{\"Error\":\"Hubo un problema\"}",HttpStatus.INTERNAL_SERVER_ERROR);
         }
         return response;
@@ -56,15 +57,22 @@ public class ClienteController {
 
     @DeleteMapping(value = "/delete/{rut}")
     public String delete(@PathVariable(value = "rut") String rut){
-         clienteService.deleteClientePorRut(rut);
-         return "el cliente con el rut: " + rut + "ha sido eliminado";
+        clienteService.deleteClientePorRut(rut);
+        return "el cliente con el rut: " + rut + "ha sido eliminado";
     }
 
-    @PutMapping(value= "/update/{rut}")
-     public String update(@PathVariable(value = "rut") String rut, @RequestBody ClienteEntity c){
+    @PutMapping(value = "/update/{rut}")
+    public String update(@PathVariable(value = "rut") String rut, @RequestBody ClienteEntity c){
         c.setRut(rut);
         clienteService.updateClienteEntity(c);
         return "El cliente con el rut:" + rut + "fue modificado";
+    }
+
+    @DeleteMapping(value= "/deleteall")
+    public String deleteAll() {
+
+        clienteService.deleteAllClientesEntitys();
+        return "Todos los clientes han sido eliminados.";
     }
 
 }
