@@ -43,13 +43,32 @@ public class AutomovilController {
     @PostMapping("/addAuto")
     public ResponseEntity<?> addAutomovil (@RequestBody AutomovilEntity auto){
         ResponseEntity<?> response;
-        String respuestaService = this.serv.saveAutomovilEntity(auto);
+        int respuestaService = this.serv.saveAutomovilEntity(auto);
         try{
-            if(respuestaService.equals("ok")) {
-                response = new ResponseEntity<>("{\"Mensaje\":\"Automovil creado creado correctamente\"}", HttpStatus.CREATED);
-            } else {
-                response = new ResponseEntity<>("{\"Error\":\"El automovil es anterior al año 2000\"}",HttpStatus.BAD_REQUEST);
-            }
+
+                switch (respuestaService) {
+                    case 1:
+                        response = new ResponseEntity<>("{\"Mensaje\":\"Automovil creado creado correctamente patente 1\"}", HttpStatus.CREATED);
+                        break;
+                    case 2:
+                        response = new ResponseEntity<>("{\"Mensaje\":\"Automovil creado creado correctamente patente 2\"}", HttpStatus.CREATED);
+                        break;
+                    case 3:
+                        response = new ResponseEntity<>("{\"Error\":\"El automovil tiene error formato 1\"}",HttpStatus.BAD_REQUEST);
+                        break;
+                    case 4:
+                        response = new ResponseEntity<>("{\"Error\":\"El automovil tiene error formato 2\"}",HttpStatus.BAD_REQUEST);
+                        break;
+                    case 5:
+                        response = new ResponseEntity<>("{\"Error\":\"El automovil es anterior al año 2000\"}",HttpStatus.BAD_REQUEST);
+                        break;
+                    case 6:
+                        response = new ResponseEntity<>("{\"Error\":\"La patente existe\"}",HttpStatus.BAD_REQUEST);
+                        break;
+                    default:
+                        response = new ResponseEntity<>("{\"Error\":\"No encontro el numero requerido\"}",HttpStatus.BAD_REQUEST);
+                        break;
+                }
         } catch (Exception ex) {
             response = new ResponseEntity<>("{\"Error\":\"Hubo un problema\"}",HttpStatus.INTERNAL_SERVER_ERROR);
         }

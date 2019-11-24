@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @Service
 public class AutomovilServiceImpl implements AutomovilService {
@@ -19,13 +21,34 @@ public class AutomovilServiceImpl implements AutomovilService {
     }
 
     @Override
-    public String saveAutomovilEntity(AutomovilEntity auto) {
-        if (auto.getAnnoFabricacion()>=2000){
-            this.repository.save(auto);
-            return "ok";
-        } else {
-            return "El anno es menor";
+    public int saveAutomovilEntity(AutomovilEntity auto) {
+        if (!findAutomovilEntityByPatente(auto.getPatente()).isPresent()) {
+            if (auto.getAnnoFabricacion() >= 2000 && auto.getAnnoFabricacion() <= 2007) {
+                if ((isPatternMatcher("[A-Z]{2}[.]{1}[1-9]{1}[0-9]{1}[-]{1}[0-9]{2}", auto.getPatente()))) {
+                    auto.setEstado("Libre");
+                    this.repository.save(auto);
+                    //Funciona con formato 1
+                    return 1;
+                } else {
+                    //No funciona el formato pedido
+                    return 3;
+                }
+            } else if (auto.getAnnoFabricacion() > 2007) {
+                if (isPatternMatcher("[BCDFGHJKLPRSTVWXYZ]{2}[-][BCDFGHJKLPRSTVWXYZ]{2}[.]{1}[0-9]{2}", auto.getPatente())) {
+                    auto.setEstado("Libre");
+                    this.repository.save(auto);
+                    //Funciona con formato 2 es menor a 2007
+                    return 2;
+                } else {
+                    //No funciona por el formato pedido
+                    return 4;
+                }
+            } else {
+                // NO funciona la fecha es menor a 2000
+                return 5;
+            }
         }
+        return 6;
     }
 
     @Override
@@ -50,4 +73,12 @@ public class AutomovilServiceImpl implements AutomovilService {
     public void deleteAllAutomovilEntitys() {
         this.repository.deleteAll();
     }
+
+    private boolean isPatternMatcher(String exp, String val) throws NullPointerException {
+        Pattern p = Pattern.compile(exp);
+        Matcher m = p.matcher(val);
+        return m.matches();
+    }
+
+
 }

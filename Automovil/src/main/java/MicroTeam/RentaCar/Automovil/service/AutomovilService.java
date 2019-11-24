@@ -12,7 +12,7 @@ import java.util.Optional;
 public interface AutomovilService {
 
 
-    String saveAutomovilEntity (AutomovilEntity auto);
+    int saveAutomovilEntity (AutomovilEntity auto);
 
     List<AutomovilEntity> getAllAutomovilEntitys();
 
