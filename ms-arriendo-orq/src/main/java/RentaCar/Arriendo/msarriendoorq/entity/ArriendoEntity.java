@@ -19,14 +19,14 @@ public class ArriendoEntity implements Serializable {
 
     @Id
     @NotNull
-    private String idArriendo;
+    private String folio;
 
 
-    private String fechaInicio;
-    private String fechaFin;
+    private LocalDate fechaInicio;
+    private LocalDate fechaFin;
     private String patenteAuto;
     private String rutCliente;
     private String rutColaborador;
     private int valorArriendo;
-    private int totalDias;
+    private int cantDias;
 }

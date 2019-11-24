@@ -6,6 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -21,8 +25,9 @@ public class ArriendoServiceImpl implements ArriendoService{
 
     @Override
     public String saveArriendoEntity(ArriendoEntity arriendo) {
-
-
+            LocalDate date = arriendo.getFechaInicio();
+            LocalDate sum = date.plusDays(arriendo.getCantDias());
+            arriendo.setFechaFin(sum);
             this.repository.save(arriendo);
             return "ok";
     }
@@ -33,8 +38,8 @@ public class ArriendoServiceImpl implements ArriendoService{
     }
 
     @Override
-    public Optional<ArriendoEntity> findArriendoEntityById(String id) {
-        return  this.repository.findById(id);
+    public ArriendoEntity findArriendoEntityByFolio(String folio) {
+        return this.repository.findOneByFolio(folio).get();
     }
 
     @Override
@@ -48,5 +53,22 @@ public class ArriendoServiceImpl implements ArriendoService{
     @Override
     public void deleteAllArriendoEntitys() {
         this.repository.deleteAll();
+    }
+
+
+
+
+    public static String sumarAnios(String fechaYHora,int anios) {
+        // Crear un formateador como 2018-10-16
+        DateTimeFormatter formateador = DateTimeFormatter.ofPattern("uuuu-MM-dd");
+
+        // Lo convertimos a objeto para poder trabajar con él
+        LocalDate fechaLocal = LocalDate.parse(fechaYHora, formateador);
+
+        // Sumar los años indicados
+        fechaLocal = fechaLocal.plusDays(anios);
+
+        //Formatear de nuevo y regresar como cadena
+        return fechaLocal.format(formateador);
     }
 }

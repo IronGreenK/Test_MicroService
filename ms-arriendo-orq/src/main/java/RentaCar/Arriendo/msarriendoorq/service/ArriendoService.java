@@ -12,7 +12,7 @@ public interface ArriendoService {
 
     List<ArriendoEntity> getAllArriendoEntitys();
 
-    Optional<ArriendoEntity> findArriendoEntityById(String id);
+    ArriendoEntity findArriendoEntityByFolio(String folio);
 
     void deleteArriendoEntityById(String id);
 
