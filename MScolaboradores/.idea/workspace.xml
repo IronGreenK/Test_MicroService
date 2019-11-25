@@ -1,7 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3e045ef-7a37-4e91-a80e-c33da0027630" name="Default Changelist" comment="" />
+    <list default="true" id="c3e045ef-7a37-4e91-a80e-c33da0027630" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Automovil.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.gradle/5.6.4/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.gradle/5.6.4/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.gradle/5.6.4/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.gradle/5.6.4/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.gradle/5.6.4/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/build/classes/java/main/MicroTeam/msclienteneg/Controller/ClienteController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/build/classes/java/main/MicroTeam/msclienteneg/Entity/ClienteEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/build/classes/java/main/MicroTeam/msclienteneg/MsClienteNegApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/build/classes/java/main/MicroTeam/msclienteneg/Repository/ClienteRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/build/classes/java/main/MicroTeam/msclienteneg/Service/ClienteService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/build/classes/java/main/MicroTeam/msclienteneg/Service/ClienteServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/build/classes/java/test/MicroTeam/msclienteneg/MsClienteNegApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/build/resources/main/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/out/production/classes/MicroTeam/msclienteneg/Controller/ClienteController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/out/production/classes/MicroTeam/msclienteneg/Entity/ClienteEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/out/production/classes/MicroTeam/msclienteneg/MsClienteNegApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/out/production/classes/MicroTeam/msclienteneg/Repository/ClienteRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/out/production/classes/MicroTeam/msclienteneg/Service/ClienteService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/out/production/classes/MicroTeam/msclienteneg/Service/ClienteServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/out/production/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/src/main/java/MicroTeam/msclienteneg/Controller/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/src/main/java/MicroTeam/msclienteneg/Entity/ClienteEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/src/main/java/MicroTeam/msclienteneg/MsClienteNegApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/src/main/java/MicroTeam/msclienteneg/Repository/ClienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/src/main/java/MicroTeam/msclienteneg/Service/ClienteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/src/main/java/MicroTeam/msclienteneg/Service/ClienteServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente/ms-cliente-neg/src/test/java/MicroTeam/msclienteneg/MsClienteNegApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cliente_con_cambios.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/automotora/MScolaboradores/controller/ColaboradorController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/automotora/MScolaboradores/entity/ColaboradorEntity$ColaboradorEntityBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/automotora/MScolaboradores/entity/ColaboradorEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/automotora/MScolaboradores/repository/ColaboradorRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/automotora/MScolaboradores/service/ColaboradorService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/automotora/MScolaboradores/service/ColaboradorServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automotora/MScolaboradores/repository/ColaboradorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automotora/MScolaboradores/service/ColaboradorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/automotora/MScolaboradores/service/ColaboradorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Otros/ms-arriendo-orq.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-arriendo-orq/src/main/java/RentaCar/Arriendo/msarriendoorq/entity/ClienteEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-arriendo-orq/src/main/java/RentaCar/Arriendo/msarriendoorq/entity/ColaboradorEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.gradle/5.6.4/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.gradle/5.6.4/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.gradle/5.6.4/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.gradle/5.6.4/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/build/classes/java/main/MicroTeam/RentaCar/Automovil/AutomovilApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/build/classes/java/main/MicroTeam/RentaCar/Automovil/controller/AutomovilController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/build/classes/java/main/MicroTeam/RentaCar/Automovil/entity/AutomovilEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/build/classes/java/main/MicroTeam/RentaCar/Automovil/repository/AutomovilRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/build/classes/java/main/MicroTeam/RentaCar/Automovil/service/AutomovilService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/build/classes/java/main/MicroTeam/RentaCar/Automovil/service/AutomovilServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/dockerFile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/src/main/java/MicroTeam/RentaCar/Automovil/AutomovilApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/src/main/java/MicroTeam/RentaCar/Automovil/controller/AutomovilController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/src/main/java/MicroTeam/RentaCar/Automovil/entity/AutomovilEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/src/main/java/MicroTeam/RentaCar/Automovil/repository/AutomovilRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/src/main/java/MicroTeam/RentaCar/Automovil/service/AutomovilService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/src/main/java/MicroTeam/RentaCar/Automovil/service/AutomovilServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automovil/src/test/java/MicroTeam/RentaCar/Automovil/AutomovilApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automotora/MScolaboradores/controller/PersonaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automotora/MScolaboradores/entity/PersonaEntity$PersonaEntityBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automotora/MScolaboradores/entity/PersonaEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automotora/MScolaboradores/repository/PersonaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automotora/MScolaboradores/service/PersonaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/automotora/MScolaboradores/service/PersonaServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automotora/MScolaboradores/controller/PersonaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automotora/MScolaboradores/controller/ColaboradorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automotora/MScolaboradores/entity/PersonaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automotora/MScolaboradores/entity/ColaboradorEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automotora/MScolaboradores/repository/PersonaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automotora/MScolaboradores/service/PersonaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/automotora/MScolaboradores/service/PersonaServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-arriendo-orq/src/main/java/RentaCar/Arriendo/msarriendoorq/MsArriendoOrqApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-arriendo-orq/src/main/java/RentaCar/Arriendo/msarriendoorq/MsArriendoOrqApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-arriendo-orq/src/main/java/RentaCar/Arriendo/msarriendoorq/controller/ArriendoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-arriendo-orq/src/main/java/RentaCar/Arriendo/msarriendoorq/controller/ArriendoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-arriendo-orq/src/main/java/RentaCar/Arriendo/msarriendoorq/entity/ArriendoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-arriendo-orq/src/main/java/RentaCar/Arriendo/msarriendoorq/entity/ArriendoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-arriendo-orq/src/main/java/RentaCar/Arriendo/msarriendoorq/repository/ArriendoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-arriendo-orq/src/main/java/RentaCar/Arriendo/msarriendoorq/repository/ArriendoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-arriendo-orq/src/main/java/RentaCar/Arriendo/msarriendoorq/service/ArriendoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-arriendo-orq/src/main/java/RentaCar/Arriendo/msarriendoorq/service/ArriendoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-arriendo-orq/src/main/java/RentaCar/Arriendo/msarriendoorq/service/ArriendoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-arriendo-orq/src/main/java/RentaCar/Arriendo/msarriendoorq/service/ArriendoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-arriendo-orq/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-arriendo-orq/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-cliente-neg/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-cliente-neg/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,9 +156,27 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1U1SQoe7pSPC29lj8cDtUGJAYij" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ms-arriendo-orq" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -61,5 +222,18 @@
       <updated>1574522594460</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
