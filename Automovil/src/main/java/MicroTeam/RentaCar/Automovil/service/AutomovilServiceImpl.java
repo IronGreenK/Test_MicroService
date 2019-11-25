@@ -34,7 +34,7 @@ public class AutomovilServiceImpl implements AutomovilService {
                     return 3;
                 }
             } else if (auto.getAnnoFabricacion() > 2007) {
-                if (isPatternMatcher("[BCDFGHJKLPRSTVWXYZ]{2}[-][BCDFGHJKLPRSTVWXYZ]{2}[.]{1}[0-9]{2}", auto.getPatente())) {
+                if (isPatternMatcher("[BCDFGHJKLPRSTVWXYZ]{2}[-]{1}[BCDFGHJKLPRSTVWXYZ]{2}[.]{1}[0-9]{2}", auto.getPatente())) {
                     auto.setEstado("Libre");
                     this.repository.save(auto);
                     //Funciona con formato 2 es menor a 2007
